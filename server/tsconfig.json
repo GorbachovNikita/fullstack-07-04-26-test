@@ -1,0 +1,25 @@
+{
+   "compilerOptions": {
+      "target": "esnext",
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "types": ["node"],
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "skipLibCheck": true,
+      "isolatedModules": true,
+      "noUnusedParameters": true,
+      "allowJs": false,
+      "esModuleInterop": true,
+      "removeComments": true,
+      "resolveJsonModule": true,
+      "noImplicitOverride": true,
+      "noFallthroughCasesInSwitch": true,
+      "noUnusedLocals": true,
+      "incremental": true,
+      "strict": true,
+      "tsBuildInfoFile": "dist/.tsbuildinfo"
+   },
+   "include": ["src/**/*"],
+   "exclude": ["node_modules"]
+}

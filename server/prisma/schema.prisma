@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Status {
+  active
+  archived
+}
+
+model Item {
+  id        Int      @id @default(autoincrement())
+  name      String?  @map("name") @db.VarChar(100)
+  status    Status?  @default(active) @map("status")
+  createdAt DateTime @default(now()) @map("createdAt")
+}

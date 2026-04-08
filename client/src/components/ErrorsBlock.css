@@ -1,0 +1,29 @@
+.errors-block {
+   display: none;
+   width: 100%;
+   padding: 3px 9px;
+   position: relative;
+   float: left;
+   border: 1px solid #f88787;
+   border-radius: 3px;
+   background-color: #f1bebe;
+   margin: 3px 0 10px;
+}
+
+@keyframes input_empty_anim {
+   0% {
+      background-color: white;
+   }
+   50% {
+      background-color: #e5baba;
+      transition: background-color 0.125s;
+   }
+   100% {
+      background-color: white;
+      transition: background-color 0.125s;
+   }
+}
+
+.input_empty {
+   animation: input_empty_anim 0.75s;
+}
